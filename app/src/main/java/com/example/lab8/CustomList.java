@@ -60,12 +60,21 @@ public class CustomList extends ArrayAdapter<City> {
     public void addCity(City city){
         cities.add(city);
     }
+
     /**
      * this checks if lost has a city
      * @param city
      */
     public boolean hasCity(City city){
         return cities.contains(city);
+    }
+
+    /**
+     * delete city
+     * @param city
+     */
+    public void deleteCity(City city){
+        //cities.remove(city);
     }
 
 }
